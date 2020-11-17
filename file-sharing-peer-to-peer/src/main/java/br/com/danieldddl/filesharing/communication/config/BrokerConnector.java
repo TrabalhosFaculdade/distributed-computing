@@ -21,6 +21,7 @@ public class BrokerConnector {
 
         final ConnectionFactory factory = new ConnectionFactory();
         factory.setHost(BrokerConfiguration.HOST);
+        factory.setPort(BrokerConfiguration.PORT);
 
         try {
             this.connection = factory.newConnection();

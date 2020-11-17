@@ -19,7 +19,7 @@ public class FileMessage {
     }
 
     @JsonCreator
-    public FileMessage(@JsonProperty("timestamp") LocalDateTime date,
+    private FileMessage(@JsonProperty("timestamp") LocalDateTime date,
                        @JsonProperty("encodedBytes") String encodedBytes,
                        @JsonProperty("filename") String filename) {
 

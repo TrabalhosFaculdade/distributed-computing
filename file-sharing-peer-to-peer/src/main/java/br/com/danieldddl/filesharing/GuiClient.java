@@ -47,7 +47,7 @@ public class GuiClient {
 
                 switch (selectedOption) {
                     case EXIT_OPTION:
-                        print("Exting the application.");
+                        print("Exiting the application.");
                         System.exit(0);
                     case SEND_MESSAGE_OPTION:
 
@@ -57,15 +57,15 @@ public class GuiClient {
                         print("File location: ");
                         final String fileLocation = scanner.nextLine();
 
-                        print("Message sent. File: " + fileLocation);
                         sender.sendMessage(fileLocation, receiver);
+                        print("Message sent. File: " + fileLocation);
                         break;
                     default:
                         print("Option informed couldn't be found, please stick to the numbers [0] and [1]");
                 }
 
             } catch (final Exception e) {
-                //don't mind me.
+                print(e.getMessage());
             }
         }
     }

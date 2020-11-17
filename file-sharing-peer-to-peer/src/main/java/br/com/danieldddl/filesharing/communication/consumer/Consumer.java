@@ -7,7 +7,6 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Objects;
 import java.util.UUID;
-import com.rabbitmq.client.DeliverCallback;
 
 import br.com.danieldddl.filesharing.communication.config.BrokerConnector;
 import br.com.danieldddl.filesharing.communication.dto.FileMessage;
